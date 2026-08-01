@@ -1,0 +1,24 @@
+STUDENT HUB PORTAL
+│
+├── Home
+|     ├── Login
+│   ├── Register
+│   ├── Dashboard
+│   ├── Profile
+│   ├── Attendance
+│   ├── Assignment
+│   ├── Course Info
+│   ├── Result
+│   └── Contact Us
+│
+├── Dashboard
+│   ├── Home
+│   ├── Profile
+│   ├── Attendance
+│   ├── Assignment
+│   ├── Course Info
+│   ├── Register
+│   └── Contact Us
+│
+└── Result
+    
