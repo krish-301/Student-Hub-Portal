@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hub Data Portal</title>
+    <link rel="stylesheet" href="../css/script.css">
+</head>
+<body>
+    <h1 align="center">Student Hub Data Portal</h1>
+    <button id="themeBtn" type="button">🌙 Theme</button>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="dashboard.html">Dashboard</a> |
+        <a href="profile.html">Profile</a> |
+        <a href="courses.html">Courses</a> |
+        <a href="attendance.html">Attendance</a> |
+        <a href="data-portal.html">Data Portal</a> |
+        <a href="result.html">Results</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main class="data-portal" id="dataPortal">
+        <h2>Campus Events</h2>
+        <p>Browse event information loaded from a JSON file.</p>
+        <div class="data-portal-controls">
+            <label>Search
+                <input id="portalSearch" type="search" placeholder="Search events">
+            </label>
+            <label>Category
+                <select id="portalFilter">
+                    <option value="">All categories</option>
+                </select>
+            </label>
+            <label>Sort
+                <select id="portalSort">
+                    <option value="asc">A to Z</option>
+                    <option value="desc">Z to A</option>
+                </select>
+            </label>
+        </div>
+        <p id="portalStatus" role="status" aria-live="polite">Loading data...</p>
+        <div id="portalResults" class="data-results"></div>
+        <div class="data-pagination">
+            <button id="portalPrevious" type="button" disabled>Previous</button>
+            <span id="portalPage">Page 1</span>
+            <button id="portalNext" type="button" disabled>Next</button>
+        </div>
+    </main>
+
+    <footer align="center">
+        <p>© 2026 Student Hub Portal</p>
+    </footer>
+
+    <script src="../java/script.js"></script>
+</body>
+</html>
