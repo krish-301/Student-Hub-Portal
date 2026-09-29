@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Web Design Workshop",
+    "description": "Learn HTML and CSS.",
+    "date": "2026-10-05",
+    "category": "Workshop"
+  },
+  {
+    "title": "Career Guidance Talk",
+    "description": "Explore career paths.",
+    "date": "2026-10-08",
+    "category": "Talk"
+  },
+  {
+    "title": "Coding Challenge",
+    "description": "Solve programming tasks.",
+    "date": "2026-10-12",
+    "category": "Competition"
+  },
+  {
+    "title": "Library Orientation",
+    "description": "Learn about library resources.",
+    "date": "2026-10-14",
+    "category": "Campus"
+  },
+  {
+    "title": "Science Exhibition",
+    "description": "See student projects.",
+    "date": "2026-10-18",
+    "category": "Campus"
+  },
+  {
+    "title": "Resume Clinic",
+    "description": "Improve your resume.",
+    "date": "2026-10-20",
+    "category": "Workshop"
+  },
+  {
+    "title": "Alumni Meet",
+    "description": "Meet successful graduates.",
+    "date": "2026-10-23",
+    "category": "Talk"
+  },
+  {
+    "title": "Robotics Showcase",
+    "description": "Watch student robots.",
+    "date": "2026-10-25",
+    "category": "Competition"
+  },
+  {
+    "title": "Study Skills Session",
+    "description": "Plan your study time.",
+    "date": "2026-10-28",
+    "category": "Workshop"
+  },
+  {
+    "title": "Cultural Day",
+    "description": "Celebrate campus culture.",
+    "date": "2026-11-02",
+    "category": "Campus"
+  },
+  {
+    "title": "Startup Q and A",
+    "description": "Ask startup founders questions.",
+    "date": "2026-11-04",
+    "category": "Talk"
+  },
+  {
+    "title": "Math Quiz",
+    "description": "Join a team quiz.",
+    "date": "2026-11-08",
+    "category": "Competition"
+  },
+  {
+    "title": "First Aid Training",
+    "description": "Learn basic first aid.",
+    "date": "2026-11-11",
+    "category": "Workshop"
+  },
+  {
+    "title": "Open Mic Evening",
+    "description": "Share music and stories.",
+    "date": "2026-11-15",
+    "category": "Campus"
+  },
+  {
+    "title": "Project Demo Day",
+    "description": "Present your semester project.",
+    "date": "2026-11-20",
+    "category": "Competition"
+  }
+]
