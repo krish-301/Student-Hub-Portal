@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="../css/script.css">
+</head>
+
+<body>
+    <h1 align="center">Student Portal</h1>
+    <button id="themeBtn" type="button">🌙 Theme</button>
+    <hr>
+
+    <h2 align="center">Student Registration Form</h2>
+
+    <form id="registerForm" action="../php/register.php" method="post" onsubmit="return validateRegisterForm();">
+        <p id="formMessage" class="form-message" role="status" hidden></p>
+        <a id="formDataLink" class="form-data-link" hidden></a>
+        <table align="center" cellpadding="8" style="border: 3px solid black;">
+            <tr>
+                <td>Full Name</td>
+                <td><input type="text" id="registerName" name="name" placeholder="Enter your full name"></td>
+            </tr>
+
+            <tr>
+                <td>Enrollment ID</td>
+                <td><input type="text" id="registerEnrollment" name="enrollment" placeholder="Enter enrollment ID"></td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td><input type="email" id="registerEmail" name="email" placeholder="Enter email"></td>
+            </tr>
+
+            <tr>
+                <td>Password</td>
+                <td><input type="password" id="registerPassword" name="password" placeholder="Enter password"></td>
+            </tr>
+
+            <tr>
+                <td>Confirm Password</td>
+                <td><input type="password" id="confirmPassword" name="confirm_password" placeholder="Confirm password"></td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                    <input type="radio" name="gender" value="Other"> Other
+                </td>
+            </tr>
+
+            <tr>
+                <td>Date of Birth</td>
+                <td><input type="date" id="dateOfBirth" name="date_of_birth"></td>
+            </tr>
+
+            <tr>
+                <td>Branch</td>
+                <td>
+                    <select id="branch" name="branch">
+                        <option value="">Select Branch</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Information Technology">Information Technology</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Mechanical">Mechanical</option>
+                        <option value="Civil">Civil</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Semester</td>
+                <td>
+                    <select id="semester" name="semester">
+                        <option value="">Select Semester</option>
+                        <option value="Semester 1">Semester 1</option>
+                        <option value="Semester 2">Semester 2</option>
+                        <option value="Semester 3">Semester 3</option>
+                        <option value="Semester 4">Semester 4</option>
+                        <option value="Semester 5">Semester 5</option>
+                        <option value="Semester 6">Semester 6</option>
+                        <option value="Semester 7">Semester 7</option>
+                        <option value="Semester 8">Semester 8</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Mobile Number</td>
+                <td><input type="tel" id="mobileNumber" name="mobile" placeholder="Enter mobile number"></td>
+            </tr>
+
+            <tr>
+                <td>Address</td>
+                <td>
+                    <textarea id="address" name="address" rows="4" cols="25" placeholder="Enter address"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+        </table>
+
+        <table align="center">
+            <tr>
+                <td colspan="2" align="center">
+                    Already have an account?
+                    <a href="login.html">Login Here</a>
+                </td>
+            </tr>
+        </table>
+
+        <button type="button"><a href="dashboard.html">Back to Dashboard</a></button>
+    </form>
+
+    <hr>
+
+    <p align="center">
+        © 2025 Student Portal. All Rights Reserved.
+    </p>
+
+    <script src="../java/script.js"></script>
+</body>
+</html>
