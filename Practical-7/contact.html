@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/script.css">
+</head>
+
+<body>
+    <h1 align="center">Student Portal</h1>
+    <button id="themeBtn" type="button">🌙 Theme</button>
+    <hr>
+
+    <h2 align="center">Contact Us</h2>
+
+    <form id="contactForm" action="../php/contact.php" method="post" onsubmit="return validateContactForm();">
+        <p id="formMessage" class="form-message" role="status" hidden></p>
+        <a id="formDataLink" class="form-data-link" hidden></a>
+        <table align="center" cellpadding="10" style="border: 3px solid black;">
+            <tr>
+                <td><b>Full Name</b></td>
+                <td><input type="text" id="contactName" name="name" placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <td><b>Email</b></td>
+                <td><input type="email" id="contactEmail" name="email" placeholder="Enter your email"></td>
+            </tr>
+            <tr>
+                <td><b>Phone Number</b></td>
+                <td><input type="tel" id="contactPhone" name="phone" placeholder="Enter your phone number"></td>
+            </tr>
+            <tr>
+                <td><b>Subject</b></td>
+                <td><input type="text" id="contactSubject" name="subject" placeholder="Enter subject"></td>
+            </tr>
+            <tr>
+                <td><b>Message</b></td>
+                <td>
+                    <textarea id="contactMessage" name="message" rows="5" cols="30" placeholder="Write your message"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Send Message">
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <hr>
+
+    <h3>College Contact Details</h3>
+    <p><b>Address:</b> Depstar College, near vadtal, Anand</p>
+    <p><b>Email:</b> krishdesai301@gmail.com</p>
+    <p><b>Phone:</b> +91 9876543210</p>
+
+    <button type="button"><a href="dashboard.html">Back to Dashboard</a></button>
+
+    <script src="../java/script.js"></script>
+</body>
+</html>
