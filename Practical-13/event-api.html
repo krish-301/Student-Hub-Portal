@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events API Manager</title>
+    <link rel="stylesheet" href="../css/script.css">
+</head>
+<body>
+    <h1 align="center">Event Manager (Fetch API)</h1>
+    <button id="themeBtn" type="button">🌙 Theme</button>
+    <nav><a href="admin-dashboard.html">Admin Dashboard</a> | <a href="../php/event-management.php">Full event manager</a></nav>
+    <main class="container">
+        <p id="apiMessage" class="form-message" role="status" hidden></p>
+        <form id="eventForm">
+            <h2 id="eventFormTitle">Add event</h2>
+            <input type="hidden" id="eventId">
+            <label>Title <input id="eventTitle" name="title" required maxlength="150"></label>
+            <label>Description <textarea id="eventDescription" name="description" maxlength="5000"></textarea></label>
+            <label>Date and time <input type="datetime-local" id="eventDate" name="event_date" required></label>
+            <label>Category
+                <select id="eventCategory" name="category">
+                    <option>General</option>
+                    <option>Workshop</option>
+                    <option>Festival</option>
+                    <option>Seminar</option>
+                    <option>Competition</option>
+                    <option>Other</option>
+                </select>
+            </label>
+            <label>Status
+                <select id="eventStatus" name="status">
+                    <option value="open">Open</option>
+                    <option value="closed">Closed</option>
+                </select>
+            </label>
+            <button id="saveEventButton" type="submit">Add event</button>
+            <button id="cancelEditButton" type="button" hidden>Cancel edit</button>
+        </form>
+
+        <h2>Search events</h2>
+        <label>Search title, description, or category
+            <input type="search" id="eventSearch" maxlength="100">
+        </label>
+        <label>Category
+            <select id="categoryFilter">
+                <option value="">All categories</option>
+                <option>General</option>
+                <option>Workshop</option>
+                <option>Festival</option>
+                <option>Seminar</option>
+                <option>Competition</option>
+                <option>Other</option>
+            </select>
+        </label>
+        <label>Status
+            <select id="statusFilter">
+                <option value="all">All</option>
+                <option value="open">Open</option>
+                <option value="closed">Closed</option>
+            </select>
+        </label>
+        <p id="eventLoading" role="status" hidden>Loading events...</p>
+        <div id="eventList"></div>
+        <nav aria-label="Event pages">
+            <button id="previousEvents" type="button">Previous</button>
+            <span id="eventPageInfo"></span>
+            <button id="nextEvents" type="button">Next</button>
+        </nav>
+    </main>
+    <script src="../java/script.js"></script>
+    <script src="../java/events-api.js"></script>
+</body>
+</html>
