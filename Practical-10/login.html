@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <link rel="stylesheet" href="../css/script.css">
+</head>
+<body align="center">
+    <h2>Student Hub Login</h2>
+    <button id="themeBtn" type="button">🌙 Theme</button>
+    <hr>
+    <p id="formMessage" class="form-message" role="status" hidden></p>
+    <form data-csrf-form action="../php/login.php" method="post" onsubmit="return validateLogin();" style="border: 3px solid black; width: 300px; padding: 20px; margin: auto;">
+        <input type="hidden" name="csrf_token" value="">
+        <label for="username">Student ID:</label>
+        <input type="text" id="username" name="username" placeholder="Enter student ID" required minlength="4" maxlength="20" pattern="[A-Za-z0-9-]+" autocomplete="username">
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required maxlength="255" autocomplete="current-password">
+        <br><br>
+        <label><input type="checkbox" name="remember_me" value="1"> Remember me on this device</label>
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+    </form>
+    <br>
+    <a href="register.html">Register</a> |
+    <a href="#">Forgot Password?</a>
+    <script src="../java/script.js"></script>
+    <script src="../java/auth-ui.js"></script>
+</body>
+</html>
